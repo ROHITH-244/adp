@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Posting Page</title>
+    <link rel="stylesheet" href="jobposting.css">
+    <script src="jobposting.js" defer></script> <!-- Defer is a good choice here -->
+</head>
+<body>
+    <div class="page">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="jobposting.html">Job Posting</a></li>
+                <li><a href="#candidate-analysis">Shortlisted-candidates</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container">
+            <h2>Create a new Job Posting</h2>
+            <div class="job-details">
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter job title" required>
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" placeholder="Enter department" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Enter job description" required></textarea>
+            </div>
+
+            <button type="button" id="submitJob">Submit</button>
+
+            <!-- Criteria Evaluation Section -->
+            <!-- <div id="criteriaEvaluation">
+                <h2>Criteria Evaluation</h2>
+                <div class="slider-container">
+                    <label for="education">Education:</label>
+                    <input type="range" id="education" min="0" max="100" value="50">
+                    <span id="educationValue">50</span>
+                </div>
+                <div class="slider-container">
+                    <label for="experience">Experience:</label>
+                    <input type="range" id="experience" min="0" max="100" value="50">
+                    <span id="experienceValue">50</span>
+                </div>
+                <div class="slider-container">
+                    <label for="skills">Skills:</label>
+                    <input type="range" id="skills" min="0" max="100" value="50">
+                    <span id="skillsValue">50</span>
+                </div>
+                <div class="slider-container">
+                    <label for="otherExperience">Other Experience:</label>
+                    <input type="range" id="otherExperience" min="0" max="100" value="50">
+                    <span id="otherExperienceValue">50</span>
+                </div>
+                <button type="button" id="saveAndPost">Save and Post</button>
+            </div> -->
+            <div id="criteriaEvaluation">
+                <h2>Criteria Evaluation</h2>
+                <div id="criteriaList">
+                    <div class="slider-container">
+                        <label for="education">Education:</label>
+                        <input type="range" id="education" min="0" max="100" value="50">
+                        <span id="educationValue">50</span>
+                        <button class="delete-criteria">Delete</button>
+                    </div>
+                    <!-- More criteria can be added here -->
+                </div>
+                <button type="button" id="addCriteria">Add Criteria</button>
+                <button type="button" id="saveAndPost">Save and Post</button>
+            </div>
+            
+        </div>
+    </div> <!-- Close the page div here -->
+</body>
+</html>
+    
+
+
+
+
